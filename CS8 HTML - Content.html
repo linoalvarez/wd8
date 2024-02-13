@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 8 - WebDesign Unit</title>
+    <style>
+        * {
+            transition: .12s all ease-in-out;
+        }
+
+        :root {}
+
+        .wrapper {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+            margin: 2rem auto;
+            font-size: 20px;
+            color: #333;
+            max-width: 1625px;
+        }
+        
+        .lesson {
+            background-color: cornsilk;
+            padding: 2rem;
+        }
+        
+        li:not(:empty):hover {
+            border: 3px solid;
+            background-color: gold;
+            color: brown;
+            padding-left: 0.5rem;
+            border-radius: 0 20px 20px 0 ;
+            /* font-weight: 900; */
+            /* margin-bottom: 0.2rem; */
+        }
+        
+        li {
+            border: 3px solid #0000;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+            padding-left: 0.2rem;
+            padding-right: 0.35rem;
+            /* margin-bottom: 0.35rem; */
+        }
+
+        .indent {
+            margin-left: 3rem;
+            list-style-type: square;
+            list-style-type: circle;
+        }
+
+        li:not(:empty):hover {
+         
+        }
+        
+        h1 {
+            z-index: 10;
+            position: sticky;
+            top: 1rem;
+            box-shadow: 0 0 10px -1px #3333;
+            background-color: cornsilk;
+            grid-column: 1/-1;
+            text-align: center;
+            padding: 2rem 0; 
+            margin: 0;
+            border-radius: .5rem;
+        }
+
+        .lesson:hover h2 {
+            color: cornflowerblue;
+            text-shadow: 1px 1px 0px #0000ee, -1px -1px 0px #0000ee, -1px 1px 0px #0000ee, 1px -1px 0px #0000ee;
+        }
+
+        h2 {
+            color: cornflowerblue;
+            text-shadow: 0 0 2px #0000ee;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        .lesson {
+            opacity: .58;
+            border: 1px solid #3330;
+            border-radius: .5rem;
+        }
+        
+        .lesson:hover {
+            opacity: 1;
+            border: 1px solid #3333;
+            box-shadow: 0 0 10px -1px #3333;
+            cursor: default;
+        }
+
+        .empty {
+            opacity: .2;
+        }
+
+        a {
+            color: #333;
+        }
+
+        .alert, li.alert:hover {
+            background-color: pink;
+            color: darkred;
+            border: 3px solid;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>CS8 - Web Design</h1>
+        <div class="lesson">
+            <h2>HTML 1</h2>
+            <ul>
+                <li>MS VSCode</li>
+                <li>WD8</li>
+                <li>page1.html</li>
+                <li>Lorem content: title, subtitle, paragraphs</li>
+                <li>whitespace</li>
+                <li>set wrap in VSCode settings</li>
+                <li>all &lt;div&gt;s</li>
+                <li>&lt;tag&gt;&lt;/tag&gt;  </li>
+                <li>&lt;style&gt;&lt;/style&gt;</li>
+                <li>margin / border / padding</li>
+            </ul>
+        </div>
+        <div class="lesson">
+            <h2>HTML 2</h2>
+            <ul>
+                <li>Quick Recap</li>
+                <li>Turn popups off. Settings, etc...</li>
+                <li>Markup technique</li>
+                <li>All divs, for now</li>
+                <li>padding or margin?<br>can't tell without a border</li>
+                <li>border always there.<br>even if thickness is zero</li>
+                <li>What is a div? Generic Uhaul Box.<br>Special purpose vs. generic</li>
+                <li>Not all can be divs</li>
+                <li>&lt;div&gt;, &lt;h1&gt;, &lt;h2&gt;, &lt;p&gt;</li>
+                <li class="indent">NOT for the formatting</li>
+            </ul>
+        </div>
+        <div class="lesson">
+            <h2>HTML 3</h2>
+            <ul>
+                <li>Go over the CS8 slideshow div -> container</li>
+                <li>post <b>page2.html</b> - Google Classroom Repository</li>
+                <li class="indent">save the file in your WD8 folder. Name it right!</li>
+                <li>:root {font-size: 20px;}</li>
+                <li>lorem## -> ## of words</li>
+                <li>wrap all the content with a div</li>
+                <li>the myName project will be done later</li>
+                <li><a href="https://csszengarden.com/" target="_blank">CSSZenGarden.com</a> erase styles. <a href="https://csszengarden.com/221/" target="_blank">221</a></li>
+            </ul>
+        </div>
+        <div class="lesson">
+            <h2>HTML 4</h2>
+            <ul>
+                <li>Markup process demo</li>
+                <li class="alert">maybe this should be HTML 5</li>
+                <li class="alert">myName project</li>
+                <li>VSCode particularidades</li>
+                <li class="indent">ctrl+C,X / multiple cursor ctrl+D</li>
+                <li class="indent"></li>
+            </ul>
+        </div>
+        <div class="empty lesson">
+            <h2>HTML 5</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div class="empty lesson">
+            <h2>HTML 6</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div class="empty lesson">
+            <h2>HTML 7</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div class="empty lesson">
+            <h2>HTML 8</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div class="empty lesson">
+            <h2>HTML 9</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div class="empty lesson">
+            <h2>HTML 10</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div class="empty lesson">
+            <h2>HTML 11</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div class="empty lesson">
+            <h2>HTML 12</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div class="empty lesson">
+            <h2>HTML 13</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div class="empty lesson">
+            <h2>HTML 14</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div class="empty lesson">
+            <h2>HTML 15</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
